@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Mulish:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a2bdb303e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="./assets/js/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Daniel</title>
+  </head>
+  <body>
+    <section id="home">
+      <header class="main-header">
+        <div
+          class="main-header-title contenedor row align-item-center justify-content-center"
+        >
+          <div class="col-12 header-title text-center">
+            <p>Daniel Gonzalez</p>
+            <h1>Developer Full Stack.</h1>
+            <span class="fas fa-laptop-code"></span>
+          </div>
+        </div>
+        <div class="main-header-navbar" id="navbar">
+          <div
+            class="main-header-navbar-item contenedor row align-item-center justify-content-between"
+          >
+            <div class="title-nav col-8 d-flex">
+              <p><span><</span>Daniel Gonzalez<span>/></span></p>
+            </div>
+            <nav class="nav-item d-flex align-item-center col-4" id="nav-item">
+              <a class="home item active item-before-activo" href="#home"
+                >Inicio</a
+              >
+              <a class="about_my item" href="#about_my">Sobre mí</a>
+              <a class="portfolio_my item" href="#portfolio_my">Portafolio</a>
+              <a class="services_my item" href="#services_my">Cursos</a>
+              <a class="contact_my item" href="#contact_my">Contacto</a>
+            </nav>
+            <div class="nav-bars">
+              <span class="fa fa-bars" id="bars"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <!--***ABOUT ME****-->
+    <section id="about_my">
+      <div class="contenedor row about">
+        <div class="col-5 about-img">
+          <img src="assets/img/banner/yo.jpg" alt="fotografia" />
+        </div>
+        <div class="col-7 about-me">
+          <p>Mis detalles sobre mi</p>
+          <h2>Sobre mi</h2>
+          <div class="line about-line"></div>
+          <p>
+            Hola, me llamo Daniel Felipe Gonzalez Jimenez me considero una
+            persona autodidacta y gusto por la programación lo que me motiva a
+            estar constantemente capacitandome tomando cursos y aprender nuevas
+            tecnologias.
+          </p>
+          <p class="hobies">Mis hobies</p>
+          <ul class="hobies-item d-flex justify-content-between">
+            <li><span class="far fa-hand-point-right"></span> Viajar</li>
+            <li>
+              <span class="far fa-hand-point-right"></span> Tocar el piano
+            </li>
+            <li><span class="far fa-hand-point-right"></span> Ir al cine</li>
+            <li>
+              <span class="far fa-hand-point-right"></span> Aprender cosas
+              nuevas
+            </li>
+          </ul>
+          <div class="about-btn">
+            <a
+              class="btn"
+              href="./assets/cv/CV DANIEL F. GONZALEZ DESARROLLADOR FRONT END.pdf"
+              target="_blank"
+              >Descargar Cv.</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--***SKILL***-->
+    <section class="contenedor" id="skill">
+      <div class="skill text-center">
+        <h3>Mis Skills</h3>
+        <!-- <div class="line"></div> -->
+      </div>
+      <div class="d-flex justify-content-center skill-content">
+        <div class="col-4 text-center skill-item">
+          <span class="fab fa-html5"></span>
+          <p>Html5</p>
+        </div>
+        <div class="col-4 text-center skill-item">
+          <span class="fab fa-css3-alt"></span>
+          <p>Css3</p>
+        </div>
+        <div class="col-4 text-center skill-item">
+          <span class="fab fa-bootstrap"></span>
+          <p>Boostrap</p>
+        </div>
+        <div class="col-4 text-center skill-item">
+          <span class="fab fa-css3-alt"></span>
+          <p>tailwind</p>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center skill-content">
+        <div class="col-4 text-center skill-item javascript">
+          <span class="fab fa-js-square"></span>
+          <p>Javascript</p>
+        </div>
+        <div class="col-4 text-center skill-item javascript">
+          <span class="fab fa-react"></span>
+          <p>React</p>
+        </div>
+        <div class="col-4 text-center skill-item javascript">
+          <span class="fab fa-node"></span>
+          <p>Node</p>
+        </div>
+
+        <!-- <div class="col-4 text-center skill-item">
+          <img src="assets/img/django.png" width="110" />
+          <p>Django</p>
+        </div> -->
+      </div>
+    </section>
+
+    <!--***PORTFOLIO***-->
+    <section class="contenedor portfolio" id="portfolio_my">
+      <div class="portfolio-title text-center">
+        <h2>Mi portafolio</h2>
+        <div class="line"></div>
+        <p class="center">
+          Estos son algunos de los proyectos que he realizado.
+        </p>
+      </div>
+      <div class="row flex-grap portfolio-image">
+        <!-- <div class="portfolio-image-item">
+          <div class="img-item">
+            <img
+              class=""
+              src="assets/img/project/trivia.jpg"
+              alt="imagen-portafolio"
+            />
+          </div>
+          <div class="text-center portfolio-text">
+            <div class="portfolio-content">
+              <!- <p>product desig</p> --
+              <h2>Trivia app</h2>
+              <p>Trivia desarrollada con html5, css3 y javascript.</p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://trivia-eosin.vercel.app/"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/Trivia"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub</a
+              >
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="portfolio-image-item">
+          <img
+            class="img-item"
+            src="assets/img/project/todolist.jpg"
+            alt="imagen-portafolio"
+          />
+          <div class="text-center portfolio-text">
+            <div class="portfolio-content">
+              <!-<p>product desig</p> --
+              <h2>ToDoList</h2>
+              <p>
+                Aplicación de tareas donde se puede filtrar tareas completadas y
+                no completadas, desarrollado con React Hooks useState,
+                useEffect.
+              </p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://todolist-lake.vercel.app"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/ToDoList"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub</a
+              >
+            </div>
+          </div>
+        </div> -->
+
+        <div class="portfolio-image-item portfolio-image-item-3">
+          <img
+            class="img-item a"
+            src="assets/img/project/weather.jpg"
+            alt="imagen-portafolio"
+          />
+          <div class="text-center portfolio-text">
+            <div class="portfolio-content">
+              <h2>App Weather</h2>
+              <p>
+                Aplicación que permite consultar el clima de una ciudad, usando
+                React y Boostrap obteniendo los datos de la api rest de Weather
+                API.
+              </p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://weather-app-wheat-six.vercel.app/"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/weather-app"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-image-item">
+          <img
+            class="img-item"
+            src="assets/img/project/github.jpg"
+            alt="imagen-portafolio"
+          />
+          <div class="text-center portfolio-text">
+            <div class="portfolio-content">
+              <h2>APP GitHub</h2>
+              <p>
+                Aplicación que permite consultar un repositorio, sus respectivos
+                proyectos y sus seguidores, creado con React y Tailwind.
+              </p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://github-app-pi.vercel.app/"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/GitHub_app"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-image-item">
+          <img
+            class="img-item"
+            src="assets/img/project/ecommerce.jpg"
+            alt="imagen-portafolio"
+          />
+          <div class="text-center portfolio-text">
+            <div class="portfolio-content">
+              <h2>ECOMMERCE</h2>
+              <p>
+                Ecommerce creada con React Hooks useContext, useRedux, tailwinds
+                y api rest Fake Store API.
+              </p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://e-commerce-app-plum.vercel.app/"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/e-commerce-app"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-image-item">
+          <div class="img-item">
+            <img
+              class=""
+              src="assets/img/project/xbox-rental.jpg"
+              alt="imagen-portafolio"
+            />
+          </div>
+          <div class="text-center portfolio-text">
+            <div class="">
+              <!-- <p>product desig</p> -->
+              <h2>Sistema de renta de videoJuegos</h2>
+              <p>En el Front-End: Next Js,TypeScript, Material UI.</p>
+              <p class="description">
+                En el Back-End: Node js, Express, Sequelize y postgreSQL
+              </p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://frontend-next-rental-xbox-p.vercel.app/"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/frontend-next-rental-xbox-p"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub Frontend</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/backend-xbox-rental-p"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub Backend</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--***CERTIFICATE***-->
+    <section id="services_my">
+      <div class="contenedor services">
+        <div class="portfolio-title text-center">
+          <h2>Cursos</h2>
+          <div class="line"></div>
+          <!-- <p class="center">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration.
+          </p> -->
+        </div>
+        <div class="row flex-column services-content">
+          <div class="col-4 service-item">
+            <div class="text-center">
+              <img
+                src="./assets/img/certificate/61585294264368.png"
+                width="300"
+                alt="certificate"
+              />
+
+              <h3>Back-End con Node</h3>
+
+              <!-- <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                alias molestiae earum esse nesciunt sint, voluptatum odio.
+              </p> -->
+            </div>
+          </div>
+          <div class="col-4 service-item middle">
+            <div class="text-center">
+              <img
+                src="./assets/img/certificate/13753394306704.png"
+                width="300"
+                alt="certificate2"
+              />
+              <h3>Back-End con Python, Django</h3>
+            </div>
+          </div>
+          <!-- <div class="col-4 service-item services-item-3">
+            <div class="text-center">
+              <h3>Diseño web</h3>
+              <span class="fas fa-palette"></span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                alias molestiae earum esse nesciunt sint, voluptatum odio.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!--***CONTACT***-->
+    <section class="contenedor contact" id="contact_my">
+      <div class="contact-title text-center">
+        <h2>Contacto</h2>
+        <div class="line"></div>
+      </div>
+      <form id="form">
+        <div class="contact-form d-flex flex-column col-6 center">
+          <div class="input-container">
+            <input type="text" name="name" id="name" placeholder="Nombre: *" />
+            <p class="hidden" id="alertName">Nombre requerido.</p>
+          </div>
+          <div class="input-container">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo: *"
+            />
+            <p class="hidden" id="alertEmail">Correo requerido.</p>
+          </div>
+          <div class="input-container">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <p class="hidden" id="alertMessage">Mensaje requerido.</p>
+          </div>
+          <div class="contact-btn">
+            <button class="btn" type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <!--***BUTTON UP-->
+    <div class="up d-flex align-item-center justify-content-center" id="up">
+      <div><span class="fas fa-angle-up"></span></div>
+    </div>
+    <!-- LOAD PAGE -->
+    <div class="load"></div>
+    <!--***FOOTER***-->
+    <footer class="footer d-flex align-items-center">
+      <div
+        class="row contenedor justify-content-center align-item-center footer-content"
+      >
+        <div class="col-3 d-flex footer-link">
+          <a class="correo" href="mailto:daniel.zam29@gmail.com" target="_black"
+            ><span class="fas fa-envelope"></span
+          ></a>
+          <a
+            class="facebook"
+            href="https://www.facebook.com/profile.php?id=100001074764977"
+            target="_black"
+            ><span class="fab fa-facebook"></span
+          ></a>
+          <a
+            class="link"
+            href="http://www.linkedin.com/in/daniel-felipe-gonzález-jimenez-9bb0901b4"
+            target="_black"
+            ><span class="fab fa-linkedin"></span
+          ></a>
+          <a class="git" href="https://github.com/DanielGJ29" target="_black"
+            ><span class="fab fa-github"></span
+          ></a>
+        </div>
+        <div class="col-9 d-flex f">
+          <p class="text-white">
+            Copyright ©
+            <script>
+              let d = new Date();
+              document.write(d.getFullYear());
+            </script>
+            Daniel Gonzalez.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/javascript.js"></script>
+  </body>
+</html>
