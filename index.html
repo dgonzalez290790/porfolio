@@ -2,484 +2,174 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Mulish:wght@200;300&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/a2bdb303e2.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
-    <script src="./assets/js/sweetalert2.all.min.js"></script>
+    <meta name="theme-color" content="#0b1120" />
+    <meta name="description" content="Daniel Felipe González Jiménez, Backend Developer especializado en Python. Experiencia en AVASA y desarrollo de NVR System." />
+    <title>Daniel Felipe González Jiménez | Backend Developer Python</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Daniel</title>
+    <script src="assets/js/javascript.js" defer></script>
   </head>
   <body>
-    <section id="home">
-      <header class="main-header">
-        <div
-          class="main-header-title contenedor row align-item-center justify-content-center"
-        >
-          <div class="col-12 header-title text-center">
-            <p>Daniel Gonzalez</p>
-            <h1>Developer Full Stack.</h1>
-            <span class="fas fa-laptop-code"></span>
-          </div>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Daniel González, inicio"><span aria-hidden="true">&lt;</span>DG<span aria-hidden="true">/&gt;</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#perfil">Perfil</a>
+          <a href="#tecnologias">Tecnologías</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#proyectos">Proyectos</a>
+          <a class="nav-contact" href="#contacto">Contacto</a>
         </div>
-        <div class="main-header-navbar" id="navbar">
-          <div
-            class="main-header-navbar-item contenedor row align-item-center justify-content-between"
-          >
-            <div class="title-nav col-8 d-flex">
-              <p><span><</span>Daniel Gonzalez<span>/></span></p>
-            </div>
-            <nav class="nav-item d-flex align-item-center col-4" id="nav-item">
-              <a class="home item active item-before-activo" href="#home"
-                >Inicio</a
-              >
-              <a class="about_my item" href="#about_my">Sobre mí</a>
-              <a class="portfolio_my item" href="#portfolio_my">Portafolio</a>
-              <a class="services_my item" href="#services_my">Cursos</a>
-              <a class="contact_my item" href="#contact_my">Contacto</a>
-            </nav>
-            <div class="nav-bars">
-              <span class="fa fa-bars" id="bars"></span>
-            </div>
-          </div>
-        </div>
-      </header>
-    </section>
-    <!--***ABOUT ME****-->
-    <section id="about_my">
-      <div class="contenedor row about">
-        <div class="col-5 about-img">
-          <img src="assets/img/banner/yo.jpg" alt="fotografia" />
-        </div>
-        <div class="col-7 about-me">
-          <p>Mis detalles sobre mi</p>
-          <h2>Sobre mi</h2>
-          <div class="line about-line"></div>
-          <p>
-            Hola, me llamo Daniel Felipe Gonzalez Jimenez me considero una
-            persona autodidacta y gusto por la programación lo que me motiva a
-            estar constantemente capacitandome tomando cursos y aprender nuevas
-            tecnologias.
-          </p>
-          <p class="hobies">Mis hobies</p>
-          <ul class="hobies-item d-flex justify-content-between">
-            <li><span class="far fa-hand-point-right"></span> Viajar</li>
-            <li>
-              <span class="far fa-hand-point-right"></span> Tocar el piano
-            </li>
-            <li><span class="far fa-hand-point-right"></span> Ir al cine</li>
-            <li>
-              <span class="far fa-hand-point-right"></span> Aprender cosas
-              nuevas
-            </li>
-          </ul>
-          <div class="about-btn">
-            <a
-              class="btn"
-              href="./assets/cv/CV DANIEL F. GONZALEZ DESARROLLADOR FRONT END.pdf"
-              target="_blank"
-              >Descargar Cv.</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--***SKILL***-->
-    <section class="contenedor" id="skill">
-      <div class="skill text-center">
-        <h3>Mis Skills</h3>
-        <!-- <div class="line"></div> -->
-      </div>
-      <div class="d-flex justify-content-center skill-content">
-        <div class="col-4 text-center skill-item">
-          <span class="fab fa-html5"></span>
-          <p>Html5</p>
-        </div>
-        <div class="col-4 text-center skill-item">
-          <span class="fab fa-css3-alt"></span>
-          <p>Css3</p>
-        </div>
-        <div class="col-4 text-center skill-item">
-          <span class="fab fa-bootstrap"></span>
-          <p>Boostrap</p>
-        </div>
-        <div class="col-4 text-center skill-item">
-          <span class="fab fa-css3-alt"></span>
-          <p>tailwind</p>
-        </div>
-      </div>
+      </nav>
+    </header>
 
-      <div class="d-flex justify-content-center skill-content">
-        <div class="col-4 text-center skill-item javascript">
-          <span class="fab fa-js-square"></span>
-          <p>Javascript</p>
+    <main>
+      <section class="hero section container" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Backend · Python</p>
+          <h1 id="hero-title">Construyo soluciones backend <span>con Python.</span></h1>
+          <p class="hero-summary">Soy Daniel Felipe González Jiménez, Ingeniero en Sistemas Computacionales. Actualmente colaboro en AVASA en el desarrollo de un SDK con Python y desarrollo NVR System, un sistema modular para grabar cámaras IP.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="assets/cv/Daniel_Felipe_Gonzalez_Jimenez_CV_con_foto.pdf" target="_blank" rel="noopener noreferrer">Ver CV <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="mailto:daniel.zam29@gmail.com">Escríbeme</a>
+          </div>
+          <div class="hero-links" aria-label="Perfiles profesionales">
+            <a href="https://github.com/DanielGJ29" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="http://www.linkedin.com/in/daniel-felipe-gonzález-jimenez-9bb0901b4" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <div class="col-4 text-center skill-item javascript">
-          <span class="fab fa-react"></span>
-          <p>React</p>
-        </div>
-        <div class="col-4 text-center skill-item javascript">
-          <span class="fab fa-node"></span>
-          <p>Node</p>
-        </div>
+        <aside class="hero-card" aria-label="Perfil de Daniel">
+          <div class="portrait-frame">
+            <img src="assets/img/banner/yo.jpg" alt="Retrato de Daniel Felipe González Jiménez" />
+            <div class="portrait-label">
+              <span class="status-dot" aria-hidden="true"></span>
+              <div><strong>Daniel Felipe González Jiménez</strong><span>Backend Developer · Python</span></div>
+            </div>
+          </div>
+          <div class="portrait-caption"><span>Enfoque actual</span><strong>Backend modular y mantenible</strong></div>
+        </aside>
+        <a class="scroll-cue" href="#perfil"><span aria-hidden="true">↓</span> Desplázate para conocer más</a>
+      </section>
 
-        <!-- <div class="col-4 text-center skill-item">
-          <img src="assets/img/django.png" width="110" />
-          <p>Django</p>
-        </div> -->
-      </div>
-    </section>
-
-    <!--***PORTFOLIO***-->
-    <section class="contenedor portfolio" id="portfolio_my">
-      <div class="portfolio-title text-center">
-        <h2>Mi portafolio</h2>
-        <div class="line"></div>
-        <p class="center">
-          Estos son algunos de los proyectos que he realizado.
-        </p>
-      </div>
-      <div class="row flex-grap portfolio-image">
-        <!-- <div class="portfolio-image-item">
-          <div class="img-item">
-            <img
-              class=""
-              src="assets/img/project/trivia.jpg"
-              alt="imagen-portafolio"
-            />
+      <section class="section section-muted" id="perfil" aria-labelledby="perfil-title">
+        <div class="container profile-grid">
+          <div>
+            <p class="eyebrow">01 / Perfil</p>
+            <h2 class="section-title" id="perfil-title">Backend como especialidad. Frontend como complemento.</h2>
           </div>
-          <div class="text-center portfolio-text">
-            <div class="portfolio-content">
-              <!- <p>product desig</p> --
-              <h2>Trivia app</h2>
-              <p>Trivia desarrollada con html5, css3 y javascript.</p>
-            </div>
-            <div class="link">
-              <a
-                class=""
-                href="https://trivia-eosin.vercel.app/"
-                target="_blank"
-                ><span class="fas fa-pager"></span>Ver Proyecto</a
-              >
-              <a
-                class=""
-                href="https://github.com/DanielGJ29/Trivia"
-                target="_blank"
-                ><span class="fab fa-github"></span>GitHub</a
-              >
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="portfolio-image-item">
-          <img
-            class="img-item"
-            src="assets/img/project/todolist.jpg"
-            alt="imagen-portafolio"
-          />
-          <div class="text-center portfolio-text">
-            <div class="portfolio-content">
-              <!-<p>product desig</p> --
-              <h2>ToDoList</h2>
-              <p>
-                Aplicación de tareas donde se puede filtrar tareas completadas y
-                no completadas, desarrollado con React Hooks useState,
-                useEffect.
-              </p>
-            </div>
-            <div class="link">
-              <a
-                class=""
-                href="https://todolist-lake.vercel.app"
-                target="_blank"
-                ><span class="fas fa-pager"></span>Ver Proyecto</a
-              >
-              <a
-                class=""
-                href="https://github.com/DanielGJ29/ToDoList"
-                target="_blank"
-                ><span class="fab fa-github"></span>GitHub</a
-              >
-            </div>
-          </div>
-        </div> -->
-
-        <div class="portfolio-image-item portfolio-image-item-3">
-          <img
-            class="img-item a"
-            src="assets/img/project/weather.jpg"
-            alt="imagen-portafolio"
-          />
-          <div class="text-center portfolio-text">
-            <div class="portfolio-content">
-              <h2>App Weather</h2>
-              <p>
-                Aplicación que permite consultar el clima de una ciudad, usando
-                React y Boostrap obteniendo los datos de la api rest de Weather
-                API.
-              </p>
-            </div>
-            <div class="link">
-              <a
-                class=""
-                href="https://weather-app-wheat-six.vercel.app/"
-                target="_blank"
-                ><span class="fas fa-pager"></span>Ver Proyecto</a
-              >
-              <a
-                class=""
-                href="https://github.com/DanielGJ29/weather-app"
-                target="_blank"
-                ><span class="fab fa-github"></span>GitHub</a
-              >
-            </div>
+          <div class="profile-copy">
+            <p>Soy Ingeniero en Sistemas Computacionales y enfoco mi desarrollo profesional en backend con Python. Me interesa construir componentes con responsabilidades claras, reducir duplicación y mantener el código fácil de probar.</p>
+            <p>También cuento con experiencia en desarrollo frontend con React, Next.js y TypeScript, que complementa mi trabajo en proyectos de aplicaciones web.</p>
+            <a class="text-link" href="mailto:daniel.zam29@gmail.com">Hablemos de una oportunidad <span aria-hidden="true">→</span></a>
           </div>
         </div>
+      </section>
 
-        <div class="portfolio-image-item">
-          <img
-            class="img-item"
-            src="assets/img/project/github.jpg"
-            alt="imagen-portafolio"
-          />
-          <div class="text-center portfolio-text">
-            <div class="portfolio-content">
-              <h2>APP GitHub</h2>
-              <p>
-                Aplicación que permite consultar un repositorio, sus respectivos
-                proyectos y sus seguidores, creado con React y Tailwind.
-              </p>
-            </div>
-            <div class="link">
-              <a
-                class=""
-                href="https://github-app-pi.vercel.app/"
-                target="_blank"
-                ><span class="fas fa-pager"></span>Ver Proyecto</a
-              >
-              <a
-                class=""
-                href="https://github.com/DanielGJ29/GitHub_app"
-                target="_blank"
-                ><span class="fab fa-github"></span>GitHub</a
-              >
-            </div>
-          </div>
+      <section class="section container" id="tecnologias" aria-labelledby="tech-title">
+        <div class="section-heading">
+          <p class="eyebrow">02 / Herramientas</p>
+          <h2 class="section-title" id="tech-title">Tecnologías y prácticas</h2>
+          <p class="section-intro">Herramientas que he utilizado en mi experiencia profesional y proyectos.</p>
         </div>
+        <div class="tech-grid">
+          <article class="tech-card"><span class="tech-index">01</span><h3>Backend</h3><p>Python, Django, Django REST Framework, APIs y endpoints. Experiencia limitada con FastAPI.</p></article>
+          <article class="tech-card"><span class="tech-index">02</span><h3>Pruebas y calidad</h3><p>pytest, Ruff, Black, Pylint, Bandit, pre-commit, refactorización y manejo de excepciones.</p></article>
+          <article class="tech-card"><span class="tech-index">03</span><h3>Datos e infraestructura</h3><p>PostgreSQL (nivel básico), Docker y FFmpeg en proyectos personales.</p></article>
+          <article class="tech-card"><span class="tech-index">04</span><h3>Frontend complementario</h3><p>React.js, Next.js, TypeScript, HTML y CSS.</p></article>
+          <article class="tech-card"><span class="tech-index">05</span><h3>Colaboración</h3><p>Git, ramas, rebases, pull requests y gestión de dependencias con Poetry.</p></article>
+        </div>
+      </section>
 
-        <div class="portfolio-image-item">
-          <img
-            class="img-item"
-            src="assets/img/project/ecommerce.jpg"
-            alt="imagen-portafolio"
-          />
-          <div class="text-center portfolio-text">
-            <div class="portfolio-content">
-              <h2>ECOMMERCE</h2>
-              <p>
-                Ecommerce creada con React Hooks useContext, useRedux, tailwinds
-                y api rest Fake Store API.
-              </p>
-            </div>
-            <div class="link">
-              <a
-                class=""
-                href="https://e-commerce-app-plum.vercel.app/"
-                target="_blank"
-                ><span class="fas fa-pager"></span>Ver Proyecto</a
-              >
-              <a
-                class=""
-                href="https://github.com/DanielGJ29/e-commerce-app"
-                target="_blank"
-                ><span class="fab fa-github"></span>GitHub</a
-              >
-            </div>
-          </div>
-        </div>
 
-        <div class="portfolio-image-item">
-          <div class="img-item">
-            <img
-              class=""
-              src="assets/img/project/xbox-rental.jpg"
-              alt="imagen-portafolio"
-            />
-          </div>
-          <div class="text-center portfolio-text">
-            <div class="">
-              <!-- <p>product desig</p> -->
-              <h2>Sistema de renta de videoJuegos</h2>
-              <p>En el Front-End: Next Js,TypeScript, Material UI.</p>
-              <p class="description">
-                En el Back-End: Node js, Express, Sequelize y postgreSQL
-              </p>
-            </div>
-            <div class="link">
-              <a
-                class=""
-                href="https://frontend-next-rental-xbox-p.vercel.app/"
-                target="_blank"
-                ><span class="fas fa-pager"></span>Ver Proyecto</a
-              >
-              <a
-                class=""
-                href="https://github.com/DanielGJ29/frontend-next-rental-xbox-p"
-                target="_blank"
-                ><span class="fab fa-github"></span>GitHub Frontend</a
-              >
-              <a
-                class=""
-                href="https://github.com/DanielGJ29/backend-xbox-rental-p"
-                target="_blank"
-                ><span class="fab fa-github"></span>GitHub Backend</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!--***CERTIFICATE***-->
-    <section id="services_my">
-      <div class="contenedor services">
-        <div class="portfolio-title text-center">
-          <h2>Cursos</h2>
-          <div class="line"></div>
-          <!-- <p class="center">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration.
-          </p> -->
+      <section class="section container" id="experiencia" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">03 / Trayectoria</p>
+          <h2 class="section-title" id="experience-title">Experiencia profesional</h2>
+          <p class="section-intro">Desarrollo backend, APIs e integraciones para el sector de renta de vehículos.</p>
         </div>
-        <div class="row flex-column services-content">
-          <div class="col-4 service-item">
-            <div class="text-center">
-              <img
-                src="./assets/img/certificate/61585294264368.png"
-                width="300"
-                alt="certificate"
-              />
-
-              <h3>Back-End con Node</h3>
-
-              <!-- <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                alias molestiae earum esse nesciunt sint, voluptatum odio.
-              </p> -->
+        <article class="experience-card">
+          <div class="experience-date"><span class="timeline-dot" aria-hidden="true"></span><span>Noviembre de 2024 – Actualidad</span></div>
+          <div class="experience-body">
+            <div class="experience-heading"><div><h3>AVASA</h3><p class="role">Desarrollador de software | Backend Python</p></div><span class="tag">Modalidad híbrida</span></div>
+            <p>Participo en el desarrollo y mantenimiento de APIs REST con Django REST Framework y FastAPI, así como en un SDK de Python para integrar servicios externos del sector de renta de vehículos.</p>
+            <ul class="bullet-list">
+              <li>Crear, modificar y documentar endpoints.</li>
+              <li>Desarrollar y mantener SDK, adaptadores e integraciones con servicios externos.</li>
+              <li>Refactorizar código para reducir duplicación y mejorar su mantenibilidad.</li>
+              <li>Desarrollar pruebas automatizadas y aplicar buenas prácticas de calidad y seguridad.</li>
+            </ul>
+            <div class="experience-tech">
+              <span class="experience-tech-label">Tecnologías</span>
+              <ul class="tag-list" aria-label="Tecnologías utilizadas en AVASA"><li>Python</li><li>Django REST Framework</li><li>FastAPI</li><li>pytest</li><li>Poetry</li><li>Ruff</li><li>Pylint</li><li>Bandit</li><li>Git</li><li>GitHub</li></ul>
             </div>
           </div>
-          <div class="col-4 service-item middle">
-            <div class="text-center">
-              <img
-                src="./assets/img/certificate/13753394306704.png"
-                width="300"
-                alt="certificate2"
-              />
-              <h3>Back-End con Python, Django</h3>
-            </div>
-          </div>
-          <!-- <div class="col-4 service-item services-item-3">
-            <div class="text-center">
-              <h3>Diseño web</h3>
-              <span class="fas fa-palette"></span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                alias molestiae earum esse nesciunt sint, voluptatum odio.
-              </p>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </section>
-    <!--***CONTACT***-->
-    <section class="contenedor contact" id="contact_my">
-      <div class="contact-title text-center">
-        <h2>Contacto</h2>
-        <div class="line"></div>
-      </div>
-      <form id="form">
-        <div class="contact-form d-flex flex-column col-6 center">
-          <div class="input-container">
-            <input type="text" name="name" id="name" placeholder="Nombre: *" />
-            <p class="hidden" id="alertName">Nombre requerido.</p>
-          </div>
-          <div class="input-container">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Correo: *"
-            />
-            <p class="hidden" id="alertEmail">Correo requerido.</p>
-          </div>
-          <div class="input-container">
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Mensaje"
-            ></textarea>
-            <p class="hidden" id="alertMessage">Mensaje requerido.</p>
-          </div>
-          <div class="contact-btn">
-            <button class="btn" type="submit">Enviar</button>
-          </div>
-        </div>
-      </form>
-    </section>
-    <!--***BUTTON UP-->
-    <div class="up d-flex align-item-center justify-content-center" id="up">
-      <div><span class="fas fa-angle-up"></span></div>
-    </div>
-    <!-- LOAD PAGE -->
-    <div class="load"></div>
-    <!--***FOOTER***-->
-    <footer class="footer d-flex align-items-center">
-      <div
-        class="row contenedor justify-content-center align-item-center footer-content"
-      >
-        <div class="col-3 d-flex footer-link">
-          <a class="correo" href="mailto:daniel.zam29@gmail.com" target="_black"
-            ><span class="fas fa-envelope"></span
-          ></a>
-          <a
-            class="facebook"
-            href="https://www.facebook.com/profile.php?id=100001074764977"
-            target="_black"
-            ><span class="fab fa-facebook"></span
-          ></a>
-          <a
-            class="link"
-            href="http://www.linkedin.com/in/daniel-felipe-gonzález-jimenez-9bb0901b4"
-            target="_black"
-            ><span class="fab fa-linkedin"></span
-          ></a>
-          <a class="git" href="https://github.com/DanielGJ29" target="_black"
-            ><span class="fab fa-github"></span
-          ></a>
-        </div>
-        <div class="col-9 d-flex f">
-          <p class="text-white">
-            Copyright ©
-            <script>
-              let d = new Date();
-              document.write(d.getFullYear());
-            </script>
-            Daniel Gonzalez.
-          </p>
-        </div>
-      </div>
-    </footer>
+        </article>
+      </section>
 
-    <script src="assets/js/javascript.js"></script>
+      <section class="section section-muted" id="proyectos" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">04 / Trabajo seleccionado</p>
+            <h2 class="section-title" id="projects-title">Proyectos</h2>
+            <p class="section-intro">Un proyecto backend en desarrollo y dos proyectos web complementarios.</p>
+          </div>
+          <article class="project-feature">
+            <div class="project-visual nvr-visual" aria-hidden="true">
+              <div class="terminal-window"><div class="terminal-top"><i></i><i></i><i></i><span>nvr-system</span></div><pre><span class="terminal-muted">$</span> python recording_manager.py
+<span class="terminal-green">✓</span> Camera discovered via ONVIF
+<span class="terminal-green">✓</span> RTSP stream connected
+<span class="terminal-blue">→</span> Recording with FFmpeg
+<span class="terminal-muted">···</span> Storage · PostgreSQL</pre></div>
+              <span class="visual-caption">Python / video pipeline</span>
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span class="project-number">Proyecto destacado</span><span class="tag">En desarrollo</span></div>
+              <h3>NVR System</h3>
+              <p>Sistema de grabación de cámaras IP desarrollado con Python. El proyecto reúne descubrimiento de dispositivos con ONVIF, conectividad RTSP y grabación mediante FFmpeg, con PostgreSQL, Docker y pruebas unitarias.</p>
+              <p>Su diseño separa responsabilidades entre componentes como <code>RecordingService</code>, <code>RecordingManager</code>, <code>VideoRecording</code> y <code>RecordingStorage</code> para gestionar grabaciones, procesos de vídeo y almacenamiento.</p>
+              <ul class="tag-list" aria-label="Tecnologías del proyecto"><li>Python</li><li>ONVIF</li><li>RTSP</li><li>FFmpeg</li><li>PostgreSQL</li><li>Docker</li><li>pytest</li></ul>
+              <a class="button button-primary project-button" href="https://github.com/daniel-first-labs/nvr-system" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card-top"><span class="project-number">Proyecto web</span><span class="project-symbol" aria-hidden="true">01</span></div>
+              <h3>Sistema de renta de videojuegos</h3>
+              <p>Aplicación web de renta. El frontend está desarrollado con Next.js, TypeScript y Material UI; el backend utiliza Node.js, Express, Sequelize y PostgreSQL.</p>
+              <ul class="tag-list"><li>Next.js</li><li>TypeScript</li><li>Node.js</li><li>PostgreSQL</li></ul>
+              <div class="project-links"><a href="https://frontend-next-rental-xbox-p.vercel.app/" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a><a href="https://github.com/DanielGJ29/frontend-next-rental-xbox-p" target="_blank" rel="noopener noreferrer">Frontend ↗</a><a href="https://github.com/DanielGJ29/backend-xbox-rental-p" target="_blank" rel="noopener noreferrer">Backend ↗</a></div>
+            </article>
+            <article class="project-card">
+              <div class="project-card-top"><span class="project-number">Proyecto web</span><span class="project-symbol" aria-hidden="true">02</span></div>
+              <h3>Ecommerce</h3>
+              <p>Aplicación de comercio electrónico desarrollada con React. Integra gestión de estado con Context y Redux, y consume datos de Fake Store API.</p>
+              <ul class="tag-list"><li>React</li><li>Context</li><li>Redux</li><li>REST API</li></ul>
+              <div class="project-links"><a href="https://e-commerce-app-plum.vercel.app/" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a><a href="https://github.com/DanielGJ29/e-commerce-app" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="container contact-content">
+          <div><p class="eyebrow">05 / Contacto</p><h2 id="contact-title">¿Hablamos?</h2><p>Estoy abierto a conversar sobre oportunidades profesionales y proyectos de desarrollo backend.</p></div>
+          <div class="contact-links">
+            <a href="mailto:daniel.zam29@gmail.com"><span>Correo</span><strong>daniel.zam29@gmail.com ↗</strong></a>
+            <a href="https://github.com/DanielGJ29" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>DanielGJ29 ↗</strong></a>
+            <a href="http://www.linkedin.com/in/daniel-felipe-gonzález-jimenez-9bb0901b4" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Ver perfil ↗</strong></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="container footer-inner"><a class="brand" href="#inicio"><span aria-hidden="true">&lt;</span>DG<span aria-hidden="true">/&gt;</span></a><p>Daniel Felipe González Jiménez · <span id="year"></span></p><a href="#inicio">Volver al inicio ↑</a></div></footer>
   </body>
 </html>
