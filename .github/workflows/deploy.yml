@@ -1,0 +1,40 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy to production
+    runs-on: self-hosted
+
+    steps:
+      - name: Update portfolio
+        run: |
+          set -e
+
+          cd /data/projects/porfolio
+
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Verify deployment
+        run: |
+          set -e
+
+          test -f /data/projects/porfolio/index.html
+          curl --fail --silent --show-error \
+            http://127.0.0.1/ \
+            -o /dev/null
+
+          echo "Portfolio deployment completed successfully."
